@@ -1,0 +1,19 @@
+<div class="rule-container">
+    <div class="m-4 mb-0 header">RUN RULES FORM</div>
+    <form [formGroup]="form">
+        <div class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="m-4" style="width: 320px; max-width:320px">
+            <div class="text-primary mb-2 label">INPUT JSON :</div>
+             <json-editor [options]="editorOptions" formControlName="inputData" ></json-editor>
+            </div>
+            <div class="m-4" style="width: 320px; max-width:320px">
+            <div class="text-success mb-2 label">OUTPUT JSON :</div>
+             <json-editor class="outPut" [options]="OutPutOptions" formControlName="outputData" ></json-editor>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center m-0">
+            <button (click)="clickRules(data)"  type="submit" class="btn btn-outline-secondary validate-btn">Run Rules</button>
+        </div>
+    </form>
+   
+</div>

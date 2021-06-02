@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min';
+@import '~ngx-toastr/toastr.css';
+@import "~jsoneditor/dist/jsoneditor.min.css";
+html{
+        width: 100vw;
+    height: 100vh;
+}
+body{
+    background-image: linear-gradient(rgb(115, 119, 116) 22%, rgb(40, 36, 84) 73%);
+}
